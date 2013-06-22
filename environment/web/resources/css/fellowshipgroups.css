@@ -1,0 +1,69 @@
+body {
+	color: #DDDDDD;
+	margin: 0;
+	padding: 0
+}
+
+#header {
+	background-color: #FFFFFF;
+	background-repeat: no-repeat;
+	background-position: 1px 1px;
+	border: 5px solid #FFFFFF;
+	height: 72px;
+	position: relative;
+	top: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	width: 95%;
+}
+
+#map_canvas {
+	border-top: 10px solid #DDDDDD;
+	border-bottom: 10px solid #DDDDDD;
+	height: 86%;
+	margin: 0px;
+	margin-top: 10px;
+	position: relative;
+	width: 100%;
+}
+
+#menu {
+	margin-top: 5px;
+	position: relative;
+	width: 100%;
+}
+
+#footer {
+	background-color: #DDDDDD;
+	bottom: 0;
+	color: #000000;
+	font-size: smaller;
+	height: 20px;
+	position: fixed;
+	text-align: right;
+	width: 100%;
+}
+
+.menuBtn {
+	color: #C01D2E;
+	font-size: larger;
+	height: 30px;
+	width: 250px;
+}
+
+.menuBtn.unclicked {
+	color: #DDDDDD;
+	font-size: larger;
+	height: 30px;
+	width: 250px;
+}
+
+.menuBtn:hover {
+	color: #C01D2E;
+	cursor: pointer;
+}
+
+.infoWindow {
+	color: #C01D2E;
+}

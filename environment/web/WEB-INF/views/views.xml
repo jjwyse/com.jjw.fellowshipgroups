@@ -1,0 +1,20 @@
+<!DOCTYPE tiles-definitions PUBLIC
+      "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+      "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>
+
+   <definition name="template" template="/WEB-INF/views/template.jsp">
+      <put-attribute name="header" value="/WEB-INF/views/header.jsp" />
+      <put-attribute name="body" value="/WEB-INF/views/body.jsp" />
+      <put-attribute name="footer" value="/WEB-INF/views/footer.jsp" />
+   </definition>
+
+   <definition name="home" extends="template">
+   </definition>
+   
+   <definition name="exception" extends="template">
+      <put-attribute name="body" value="/WEB-INF/views/exception.jsp" />
+   </definition>
+
+</tiles-definitions>

@@ -1,0 +1,17 @@
+
+# Make sure we have our ENV_FGWEBAPP_DIR environment variable set.
+if [ -z "$ENV_FGWEBAPP_DIR" ]; then
+    echo "Need to set ENV_FGWEBAPP_DIR"
+    exit 1
+fi
+
+COMPONENT=@COMPONENT@
+
+FGWEBAPP_CONFIG_DIR=$ENV_FGWEBAPP_DIR/config
+export FGWEBAPP_CONFIG_DIR
+
+LOG4J_CONFIG_FILE_PROPERTY="-Dfellowshipgroups.log4j.file=$FGWEBAPP_CONFIG_DIR/log4j.xml"
+COMPONENT_PROPERTY="-Dcomponent=$COMPONENT"
+RUNTIME_PROPERTY="-Druntime.properties.dir=$FGWEBAPP_CONFIG_DIR"
+
+export JAVA_OPTS="${LOG4J_CONFIG_FILE_PROPERTY} ${PID_PROPERTY} ${COMPONENT_PROPERTY} ${RUNTIME_PROPERTY}"
