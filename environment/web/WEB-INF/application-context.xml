@@ -13,7 +13,7 @@
    <bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping" />
 
    <!-- Load in properties -->
-   <context:property-placeholder location="file://${FGWEBAPP_CONFIG_DIR}/com.jjw.fellowshipgroups-application.properties" />
+   <context:property-placeholder location="file://${FGWEBAPP_CONFIG_DIR}/fellowshipgroups-application.properties" />
 
    <!-- Allow for annotations. -->
    <context:annotation-config />
