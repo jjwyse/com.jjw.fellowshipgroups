@@ -125,7 +125,6 @@
             {
                var fgMarker = new google.maps.Marker(
                {
-                  icon : "/fellowshipgroups/resources/images/favicon.ico",
                   map : map,
                   position : results[0].geometry.location,
                   title : leaders
